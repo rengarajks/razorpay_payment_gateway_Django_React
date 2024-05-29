@@ -16,7 +16,7 @@ def create_order(request):
             selected_data = data.get('selectedCourse')
             logger.debug("Received request for course: %s", selected_data)
             
-            # Validate selected course and determine amount
+            # Validate selected course and determine amoun
             if selected_data == 'Python':
                 amount = 1999
             elif selected_data == 'Java':
