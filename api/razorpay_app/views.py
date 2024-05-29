@@ -42,7 +42,7 @@ def create_order(request):
             return JsonResponse({
                 'order_id': payment_order_id,
                 'razorpay_key': settings.RAZORPAY_KEY_ID,
-                'amount': amount  # Sending amount to frontend for validation
+                'amount': amount  # Sending amount to frontend for validatio
             })
         except Exception as e:
             logger.error("Error creating Razorpay order: %s", str(e))
